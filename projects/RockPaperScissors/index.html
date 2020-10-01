@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rock-Paper-Scissors</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet"> 
+</head>
+<body>
+ 	<div class="wraper">
+ 		<div class="game-rules">
+ 			<h1 class="titleOfGame">Rock Paper Scissors Rules</h1>
+			<ul>
+				<li>Select your moove</li>
+				<li>Click on start button</li>
+				<li>Wait for computer moove</li>
+			</ul>
+ 		</div>
+		
+		 <div class="game-interface-wraper"> 
+			<div class="game-interface">
+				<div class="icons">
+					<img src="ico-1.png" alt="paper" class="firstColumnIcon" id="paper" name="toClick">
+					<img src="ico-2.png" alt="rock" class="firstColumnIcon" id="rock" name="toClick">
+					<img src="ico-3.png" alt="scissors" class="firstColumnIcon" id="scissors" name="toClick">
+				</div>
+
+				<div class="game-score-wraper">
+					<div class="game-score">
+						<div class="row">
+							<div class="myChoose" id="myChoose"></div>
+							<div class="timer" id='timer'></div>
+							<div class="enemyChoose" id="enemyChoose"></div>
+						</div>
+						
+						<div class="row">
+							<div class="scoreUser" id="scoreUser">0</div>
+							<div class="colon">:</div>
+							<div class="scoreBot" id="scoreBot">0</div>
+						</div>
+					</div>
+
+					<div class="button">
+						<button class="buttonStart" id="button">Let's start</button>
+					</div>
+				</div>
+
+				<div class="icons">
+					<img src="ico-1.png" alt="paper" class="secondColumnIcon">
+					<img src="ico-2.png" alt="rock" class="secondColumnIcon">
+					<img src="ico-3.png" alt="scissors" class="secondColumnIcon">
+				</div>
+			</div>
+		 </div> 
+
+	</div> 
+	<script src="script.js"></script>
+</body>
+</html>

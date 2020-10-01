@@ -1,0 +1,113 @@
+* {
+	font-family: 'Mukta', sans-serif;
+}
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.wraper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.firstColumnIcon {
+	width: 125px;
+	height: 125px;
+	cursor: pointer;
+}
+.secondColumnIcon {
+	width: 125px;
+	height: 125px;
+}
+.game-interface {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 500px;
+}
+.icons {
+	display: flex;
+	flex-direction: column;
+}
+.button {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+.buttonStart {
+	height: 40px;
+	width: 100px;
+	margin-right: 5px; 
+	background: #46e246;
+    color: #fff;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+}
+.myChoose {
+	width: 125px;
+	height: 125px;
+	border: 1px solid black;
+}
+.enemyChoose {
+	width: 125px;
+	height: 125px;
+	border: 1px solid black;
+}
+.timer {
+	width: 125px;
+	height: 125px;
+	border: 1px solid black;
+}
+.flexForBut {
+	display: flex;
+	flex-direction: column;
+}
+.game-score {
+	display: flex;
+	flex-direction: column;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+}
+.game-interface-wraper {
+	margin-top: 50px;
+	width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+} 
+.scoreUser {
+	padding: 0;
+	text-align: center;
+	width: 125px;
+	height: 125px;
+	font-size: 100px;
+} 
+.colon {
+	padding: 0;
+	text-align: center;
+	width: 125px;
+	height: 125px;
+	font-size: 100px;
+}
+.scoreBot {
+	padding: 0;
+	text-align: center;
+	width: 125px;
+	height: 125px;
+	font-size: 100px;
+}
+.timer {
+	padding: 0;
+	text-align: center;
+	width: 125px;
+	height: 125px;
+	font-size: 100px;
+}

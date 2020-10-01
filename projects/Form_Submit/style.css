@@ -1,0 +1,52 @@
+body {
+	background-image:url(forest-background.jpg), linear-gradient( 
+     #071820, #071820);
+     background-repeat: no-repeat;
+}
+.wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	color: #fff;
+}
+.form {
+	width: 60%;
+	padding: 50px;
+	margin: auto;
+	background-color: rgba(142, 144, 145, 0.6);
+}
+#age-div {
+	display: flex;
+	flex-direction: column;
+}
+.age-input {
+	display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	/*height: calc(1.5em + .75rem + 2px);
+	border-radius: .25rem;
+	border: 1px solid #ced4da;*/
+}
+.submit-button {
+	display: flex;
+	justify-content: center;
+}
+.btn {
+	width: 100% !important;
+}
+.check-box {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
