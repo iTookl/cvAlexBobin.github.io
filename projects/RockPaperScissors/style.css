@@ -8,7 +8,7 @@ body {
 }
 .wraper {
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -79,6 +79,7 @@ body {
 .game-interface-wraper {
 	margin-top: 50px;
 	width: 100%;
+	/*height: 100vh;*/
     display: flex;
     align-items: center;
     justify-content: center;     
@@ -110,4 +111,95 @@ body {
 	width: 125px;
 	height: 125px;
 	font-size: 100px;
+}
+#createdIcon {
+	width: 125px !important;
+	height: 125px !important;
+}
+#enemyCreatedIcon {
+	width: 125px !important;
+	height: 125px !important;	
+}
+@media screen and (max-width:479px) {		
+	.wraper {
+		width: 100%;		
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.game-rules {	
+		width: 250px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.game-interface {
+		width: 250px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;			
+	}
+	.myChoose {
+		width: 62.5px;
+		height: 62.5px;
+		border: 1px solid black;
+	}
+	.timer {
+		width: 62.5px;
+		height: 62.5px;
+		font-size: 2.5em;
+		text-align: center;
+		border: 1px solid black;
+	}
+	.enemyChoose {
+		width: 62.5px;
+		height: 62.5px;
+		border: 1px solid black;
+	}
+	.secondColumnIcon {
+		display: none;
+	}
+	.scoreUser {
+		padding: 0;
+		text-align: center;
+		width: 62.5px;
+		height: 62.5px;
+		font-size: 50px;
+	} 
+	.colon {
+		padding: 0;
+		text-align: center;
+		width: 62.5px;
+		height: 62.5px;
+		font-size: 50px;
+	}
+	.scoreBot {
+		padding: 0;
+		text-align: center;
+		width: 62.5px;
+		height: 62.5px;
+		font-size: 50px;
+	}
+	.firstColumnIcon {
+		width: 62.5px;
+		height: 62.5px;
+		cursor: pointer;
+	}
+	.icons {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 5px;
+	}
+	#createdIcon {
+		width: 62.5px !important; 
+		height: 62.5px !important;
+	}
+	#enemyCreatedIcon {
+		width: 62.5px !important; 
+		height: 62.5px !important;	
+	}
+	
 }

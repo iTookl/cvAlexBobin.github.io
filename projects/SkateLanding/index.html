@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>Skate It</title>
 </head>
 <body>
@@ -18,7 +18,29 @@
 			</video>
 
 			<div class="nav-wraper">
-				<nav class="navbar navbar navbar-dark bg-dark">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				  <a class="navbar-brand" href="#">Skate It</a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNav">
+				    <ul class="navbar-nav">
+				      <li class="nav-item active">
+				        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#features">Features</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#designs">Designs</a>
+				      </li>  
+				      <li class="nav-item">
+				        <a class="nav-link" href="#pricing">Pricing</a>
+				      </li>      
+				    </ul>
+				  </div>
+				</nav>
+				<!-- <nav class="navbar navbar navbar-dark bg-dark">
 				  <span class="navbar-brand mb-0 h1">
 				  	Skate It
 				  </span>
@@ -36,7 +58,8 @@
 					    <a class="nav-link" href="#pricing">Pricing</a>
 					  </li>
 					</ul>
-				</nav>	
+
+				</nav>	 -->
 				<div class="text-in-header">
 					<h1>Skate it</h1>
 					<p>Skateboard decks for everyone</p>
@@ -110,7 +133,7 @@
 			<div class="price-title">
 				<h3>Our Prices</h3>
 			</div>
-			<div class="pricing">									
+			<div class="pricing" id="pricing">									
 				<div class="price-block">
 					<div class="item-title">
 						<h3>

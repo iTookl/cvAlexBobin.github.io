@@ -67,4 +67,30 @@
  		width: 100%;
  	}
 }
+@media screen and (max-width:479px) {
+  .contacts {
+ 		display: flex;
+ 		flex-direction: column;  		
+ 	}
+ 	.info-about-me {
+ 		display: flex;
+ 		flex-direction: column;
+ 		justify-content: center;
+ 		align-items: center;
+ 	} 	
+ 	.knowledge {
+ 		text-align: center;
+ 	}
+ 	.wraper-for-text {
+ 		width: 100%; 	
+ 	}
+}
 
+
+
+/*
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}*/

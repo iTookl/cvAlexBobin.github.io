@@ -17,11 +17,11 @@ const selectScoreBot = document.getElementById('scoreBot');
 
 
 const ico = document.createElement('img'); //create tag img cuz i need show that icon
+ico.id = 'createdIcon';
 const secondIco = document.createElement('img');  // create tag for a "bot" choose
-ico.style.width = '125px'; // classes for icon that choosed
-ico.style.height = '125px';
-secondIco.style.width = '125px'; 
-secondIco.style.height = '125px';
+secondIco.id = 'enemyCreatedIcon';
+
+
 
 
 let check = 0;
@@ -84,7 +84,7 @@ function click() {
 		showTimer(options);
 		compChoose(options);
 		options.timer = setTimeout(countDown, options.delay, options);
-/*		compChoose(options);*/
+
 	} else {
 		//stop timer
 		if(options.timer) {
@@ -174,97 +174,3 @@ function algoritm() {
 
 }
 
-
-
-
-
-
-
-
-
-
-/*
-	let active = 0;
-	button.onclick = function() {
-		if (active === 0) {
-			active = 1;
-			button.textContent = 'Stop';
-			button.style.backgroundColor = '#f45c42';
-		} else {
-			active = 0;
-			button.textContent = 'Let\'s start';
-			button.style.backgroundColor = '#46e246';
-		}
-	}
-
-
-function clickOnButton(){
-	if (active === 0) {
-		enemyChoose.appendChild(secondIco); // adding img to div
-
-		//show the timer
-		let numberOfSecond = 4;
-		setTimeout(count, 1000);
-		let count = (() => {
-			let rand = Math.floor(Math.random() * 3) + 1; // random number to select the move
-		    numberOfSecond--;
-		    if (numberOfSecond > 0) {
-		      setTimeout(count, 1000);
-		    } 
-		    if (numberOfSecond === 0) {
-		    	numberOfSecond = 4;
-		    	count();//show again timer after 3sec over & over again before user's click "Stop game"
-
-		    	//computer choose
-		    	switch (rand) {
-				case 1:
-					secondIco.src = `ico-1.png`;
-					moveBot = 'paper';
-					break;
-				case 2:
-					secondIco.src = `ico-2.png`;
-					moveBot = 'rock';
-					break;
-				case 3:
-					secondIco.src = `ico-3.png`;
-					moveBot = 'scissors';
-					break;
-				}
-		    }
-		    timer.innerHTML = numberOfSecond;
-		});
-		let timeDelay = numberOfSecond * 1000;
-		let delay = (() => {
-			//algoritm of the game
-			if (moveUser === '' | moveBot === '') {
-				
-			}
-		    else if (moveBot === moveUser) {
-				console.log('draw');
-			}
-			else if (moveUser === 'paper' && moveBot === 'rock') {
-				console.log('user win!');
-				scoreUser += 1; 
-				selectScoreUser.innerHTML = scoreUser;
-			}
-			else if (moveUser === 'rock' && moveBot === 'scissors') {
-				console.log('user win!');	
-				scoreUser += 1;
-				selectScoreUser.innerHTML = scoreUser;
-			}
-			else if (moveUser === 'scissors' && moveBot === 'paper') {
-				console.log('user win!');
-				scoreUser += 1;
-				selectScoreUser.innerHTML = scoreUser;
-			} else {
-				console.log('you lose!');
-				console.log(`moveUser: ${moveUser} \n moveBot: ${moveBot}`);
-				scoreBot += 1;
-				selectScoreBot.innerHTML = scoreBot;
-			}
-		});
-		setInterval(delay, timeDelay);//run the game over and over again before user's scick on "stop game" 
-	} else {
-		return;
-	}
-}*/

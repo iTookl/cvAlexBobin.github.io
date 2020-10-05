@@ -6,21 +6,8 @@
 html {
 	 overflow-x: hidden;
 }
-.navbar {
-	width: 100% !important;
-}
-.wrap-for-header-content {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 15%;
-}
-.buttons {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 50%;
-}
+
+
 .row .col {
 	display: flex;
 	justify-content: space-around;
@@ -45,9 +32,7 @@ body {
 	min-height: 100vh;
 	background-color: #091921 !important;
 }
-/*body.light {
-	background: #d1dae3;
-}*/
+
 .wrap {
 	width: 100%;
 	flex-direction: column;
@@ -89,10 +74,7 @@ body {
 				0 15px 15px rgba(0, 0, 0, 0.3),
 				inset 0 15px 15px rgba(0, 0, 0, 0.3);
 }
-/*body .light .clock {
-	background: #d1dae3 url(clock.png);
-	background-size: cover;
-}*/
+
 .clock:before {
 	content: "";
 	position: absolute;
@@ -151,4 +133,68 @@ body {
 	background: #ff105e;
 	z-index: 12;
 	border-radius: 6px 6px 0 0;
+}
+
+
+@media screen and (max-width:479px) {
+	.clock {
+		width: 175px;
+		height: 175px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #091921 url(clock.png);
+		background-size: cover;
+		border: 4px solid #091921;
+		border-radius: 50%;
+		box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+					inset 0 -15px 15px rgba(255, 255, 255, 0.05),
+					0 15px 15px rgba(0, 0, 0, 0.3),
+					inset 0 15px 15px rgba(0, 0, 0, 0.3);
+	}
+  	.clock .hour, .hr {
+		width: 80px;
+		height: 80px;
+	}
+	.clock .min, .mn {
+		width: 95px;
+		height: 95px;
+	}
+	.clock .sec, .sc {
+		width: 115px;
+		height: 115px;
+	}
+	.hr, .mn, .sc {
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		border-radius: 25%;
+	}
+	.hr:before {
+		content: '';
+		position: absolute;
+		width: 4px;
+		height:40px;
+		background: #ff105e;
+		z-index: 10;
+		border-radius: 6px 6px 0 0;
+	}
+	.mn:before {
+		content: '';
+		position: absolute;
+		width: 4px;
+		height:45px;
+		background: #fff;
+		z-index: 11;
+		border-radius: 6px 6px 0 0;
+	}
+	.sc:before {
+		content: '';
+		position: absolute;
+		width: 2px;
+		height:75px;
+		background: #ff105e;
+		z-index: 12;
+		border-radius: 6px 6px 0 0;
+	}
 }

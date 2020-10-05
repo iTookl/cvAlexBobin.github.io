@@ -187,10 +187,37 @@ main {
     width: 80% !important;
   }
 }
+
+@media screen and (max-width:479px) {
+  body {
+    overflow-x: hidden; 
+  }
+  .pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .price-block {
+    width: 80% !important;
+  }
+  .navbar a, li {
+    color: #000 !important;
+  }
+  .icon {
+    display: none;
+  }
+  .wrap-for-features {
+    width: 90%;
+  }
+}
+
+
+
+
 .prices-title {
   width: 10%;
   margin: auto;
-  
 }
 .blocks-wraper {  
   margin: auto;

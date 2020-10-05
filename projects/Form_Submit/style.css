@@ -50,3 +50,12 @@ body {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
+
+@media screen and (max-width:479px) {
+	.form {
+		width: 95%;
+	}
+	.title {
+		padding: 10px;	
+	}
+}
