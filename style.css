@@ -4,11 +4,10 @@
 	margin-top: 20px;
 }
 .contacts {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	
 	color: grey;
 }
+
 .summary {
 	margin-top: 20px;
 }
